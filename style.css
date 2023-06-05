@@ -202,7 +202,12 @@ nav > ul> li:nth-child(3) {
             margin-left: 0px;
             margin-bottom: 3vh;
         }
-        
+        .contenedor1{
+            display: none;
+        }
+        .contenedor3{
+            display: none;
+        }
 }
 
 
