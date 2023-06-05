@@ -93,10 +93,12 @@
     {
         imagen: 'forza.jpg',
         nombre: 'Forza Horizon 5',
+
         genero: 'Carrera',
         plataformas: ['logoPc.jpg','logPlaystation.png','logoxbox.png',],
         lanzamiento: '2017',
         desarrollador: ' Playground Games '
+
     },
     {
         imagen: 'outlast.jpeg',
