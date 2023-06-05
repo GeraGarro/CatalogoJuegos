@@ -16,8 +16,7 @@
         <nav>
             <ul>
                 <li class="botonHeader"><a href="index.html">inicio</a> </li>
-                <li class="botonHeader"><a href="#">Juegos</a> </li>
-                <li class="botonHeader"><a href="#">Consolas ultima Generacion</a> </li>
+                <li class="botonHeader"><a href="consolas.html">Consolas ultima Generacion</a> </li>
                 <li class="botonHeader"><a href="formulario.html">Suscribite</a> </li>
             </ul>
         </nav>
@@ -29,19 +28,19 @@
             <h2>Registrarse</h2>
             <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo">
             <input type="email" name="email" id="email" placeholder="Correo">
-           <label> <input type="radio" name="genero"  value="Masculino">Masculino
+           <label> <input type="radio" id="generoMasculino" name="genero"  value="Masculino">Masculino
             </label>
-            <label> <input type="radio" name="genero" value="Femenino">Femenino
+            <label> <input type="radio" id="generoFemenino" name="genero" value="Femenino">Femenino
             </label>
+            <label for="edad">Edad<input type="number" name="edad" min="0" max="99" value=""></label>
             <input id="botonEnviar" type="submit" value="Enviar">
          </form>
     </main>
     <aside>
-        <span class="datoForm"></span>
-        <span class="datoForm"></span>
-        <span class="datoForm"></span>
-        <span class="datoForm"></span>
-        <span class="datoForm"></span>
+        <div class="error"></div>
+        <p id="cartelBienvenido">Bienvenido a Sport game <span class="datoForm" id="nombre"></span>. <br> 
+        Tienes <span class="datoForm" id="edad"></span> de Edad y sos  <span class="datoForm" id="genero"></span>. Podras a traves de tu correo <span class="datoForm" id="correo"></span> mirar el pequeño catalogo de juegos interesantes que conocemos para informarte de este mundo maravilloso del Gaming.
+    </p>
     </aside>
     <footer>
         <div class="container_fooster proovedores">
@@ -61,6 +60,8 @@
             </ul>
     </div>
     </footer>
+
+    <script src="formulario.js"></script>
    </div> 
 </body>
 </html>

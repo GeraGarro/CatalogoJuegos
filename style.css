@@ -335,15 +335,13 @@ main > section{
     background-color: rgba(5, 5, 161, 0.521);
     border-radius: 15%;
     align-self: center;
+    transition: background-color 1s, transform 1.5s;
+    
     /* transform: translate(-10%, -10%); */
 }
 .contenido{
 background-color: rgba(4, 4, 19, 0.055);
     height: 100%;
-    
-}
-.contenedorTarjeta:hover{
-    background-color: brown;
     
 }
 .contenedorTarjeta:hover{
