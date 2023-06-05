@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&family=Roboto:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,12 +13,11 @@
 
 
 body{
-   background-color: rgb(0, 0, 0);
+    background:linear-gradient(rgba(15, 15, 15, 0.418),rgba(90, 8, 243, 0.116)), url(fondoMain.jpeg) no-repeat center center fixed; 
+    background-size: cover;
     
 }
 .container{
-    background:linear-gradient(rgba(15, 15, 15, 0.418),rgba(90, 8, 243, 0.116)), url(fondoMain.jpeg) no-repeat center center fixed; 
-    background-size: cover;
     position: absolute;
     top: 13vh;
     margin-top: 3vh;
@@ -24,11 +25,12 @@ body{
     height: 90vh;
     display: grid;
     grid-template-areas:
-    "main main main aside aside"
-    "main main main aside aside"
-    "main main main aside aside"
-    "main main main aside aside"
-    "footer footer footer footer footer";
+  
+    "main main main "
+    "main main main "
+    "main main main "
+    "main main main "
+    "footer footer footer";
     grid-template-columns: 200px repeat(auto-fit,minmax(min-content,1fr));
     grid-template-rows:350px repeat(auto-fit, minmax(min-content,1fr));
      grid-gap: 10px;
@@ -162,179 +164,56 @@ nav > ul> li:nth-child(3) {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1000px) {
-    header >.titulo{
-      flex-basis: 100px;
-    }
-    .botonHeader > a{
-        font-size: 1.1rem;
-        }
-
-        header > nav > ul{
-            position: relative;
-            
-            width: 100%;
-            height: 100%;
-          
-            padding-right: 30px;
-            height: 100%;
-            list-style-type: none;
-            display: flex;
-            justify-content: flex-end;
-            align-content: center;      
-        }
-        
-         nav > ul :hover{
-            background-color: rgb(253, 65, 32);
-            font-size: 1.2rem;
-            transition: background-color 1s,font-size 0.7s;
-        }
-        .slides {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.3s ease-in-out;
-          }
-
-        .contenedorTarjeta{
-            margin-left: 0px;
-            margin-bottom: 3vh;
-        }
-}
-
-
-@media screen and (max-width: 600px) {
-    header >.titulo{
-      display: none;
-    }
-.botonHeader > a{
-font-size: .8rem;
-}
-header > nav > ul{
-    position: relative;
+main{
+    grid-area: main;
     
+    margin: 0.5vh 2vh;
+    padding: 1vh;
+}
+section{
+   
     width: 100%;
     height: 100%;
-  
-    padding-right: 30px;
-    height: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;      
-}
- .botonHeader >a{
-    font-size: 25px;
- }
-
- .botonHeader:hover  a{ 
-    background-color: rgb(253, 65, 32);
-    font-size: 22px;
-    transition: background-color 1s,font-size 0.7s;
-}  
-}
-
-
-aside{
-    display: none;
-    grid-area: aside;
-    background-color: rgba(27, 11, 175, 0.445);
-    padding: 3rem;
-    border-radius: 0 15px 15px 0;
-   font-size: 3vh;
-   font-family:'Labrada', serif;
-   text-align: center;
-  
-}
-aside >.error{
-    font-size: 5vh;
-    color: rgb(250, 0, 62);
-}
- 
-.datoForm{
-    font-size: 4vh;
-    text-shadow: 5px 5px 4px rgba(0, 0, 0, 1), 2px 2px 4px rgba(255, 255, 255, 0.5);
-    color: rgb(20, 160, 32);
-}
-
-
-main{grid-area: main;
-     background-color: darkgoldenrod; 
-    padding: 2vh;
-    
-}
-
-main > form{
-    width:100%;
-    height: 100%;
-    background-color: rgb(89, 21, 179);
     display: flex;
     flex-direction: column;
-    padding: 5vh;
-    align-items: start;
-}
-main > form > h2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 6vh;
-    font-style: oblique;
-    text-align: center;
-    text-decoration-line: underline;
     
 }
-main > form > input,main > form > label{
-    width: 100%;
-    margin-top: 3vh;
-    font-size: 2.5vh;
+article{
+    position: relative;
+    display: flex;
+    flex-basis: 2vh;
+    text-transform: ;
+    padding: 2vh 5vh;
+    align-items: center;
+}
+article >img{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 5vh 3vh;
     padding: 1vh;
 }
 
-input{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    color: black;
+article > h3{
+font-family: 'Poltawski Nowy', serif;
+font-size: 5vh;
+transform: rotate(350deg);
+text-shadow: 5px 5px 4px rgb(128, 124, 124), 2px 2px 4px rgba(247, 246, 246, 0.5);
 }
-
-input[type="number"]{
-    height: 30px;
-    width: 10vh;
-   margin-left: 2vh;
-   padding: 1vh;
-}
-label>input{
-    margin-right: 3vh;
-}
- form > label{
-   
-    font-weight: 700;
-    width: max-content;
-    height: 5vh;
-    font-size: 4vh;
+ article > p{
+    display: inline-block;
+    background-color: rgba(15, 15, 15, 0.63);
+    color: rgba(255, 255, 255, 0.945);
+    font-family: 'Castoro', serif;
+    font-size: 3vh;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 1%;
  }
+#contenedorPlay >h3{
+transform: rotate(24deg);
 
- input[type="radio"]{
-    width: 1.7vh;
-    height: 1.7vh;
- }
-
-#botonEnviar{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5vh;
-    color: rgb(255, 255, 255);
-    width: max-content;
-    padding: 2vh 4vh;
-    box-shadow: 0 2px 2px 2px rgba(41, 31, 31, 0.801);
-    border: none;
-    border-radius: 1vh 3vh 0 1.5vh;
-    align-self: center;
-    background-color: rgb(21, 24, 179);
-    transition:background-color .5s;
 }
 
-#botonEnviar:hover{
-    
-    background-color: rgb(0, 162, 255);
-}
 
 footer{
     font-size:1.3rem;
